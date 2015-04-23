@@ -430,7 +430,7 @@ table {
 /* Layout */
 #admin-bar {
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
 }
 #admin-bar > ul {
   *zoom: 1;
@@ -551,7 +551,7 @@ html {
 body {
   background-color: #fff;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: #444;
   margin: 0;
@@ -616,13 +616,13 @@ p {
 #recent-items h2,
 #recent-items #item-filters .collection,
 #item-filters #recent-items .collection {
-  padding-top: 0.75em;
+  padding-top: 0.85714em;
 }
 #featured-item .image,
 #featured-collection .image,
 #featured-exhibit .image,
 #recent-items .image {
-  margin-top: 1.5em;
+  margin-top: 1.71429em;
 }
 #featured-item img,
 #featured-collection img,
@@ -659,7 +659,7 @@ blockquote {
 }
 .view-items-link a {
   min-height: 36px;
-  padding: 0.375em 0.75em;
+  padding: 0.42857em 0.85714em;
   display: block;
   background-color: #2b2b2b;
   color: #fff;
@@ -785,22 +785,22 @@ h1, h2, #item-filters .collection, h3, h4, h5, h6 {
 }
 
 h4, h5, h6 {
-  font-style: 19.2px;
+  font-style: 16.8px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
   clear: both;
   word-wrap: break-word;
 }
 
 h2, #item-filters .collection {
-  font-size: 32px;
+  font-size: 28px;
   text-transform: capitalize;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 21px;
 }
 
 h6 {
@@ -962,7 +962,7 @@ a:hover {
 .pagination .previous-page a,
 .pagination .next-page a {
   min-height: 36px;
-  padding: 0.375em 0.75em;
+  padding: 0.42857em 0.85714em;
   display: block;
   background-color: #2b2b2b;
   color: #fff;
@@ -971,7 +971,7 @@ a:hover {
   border-radius: 3px;
   font-weight: bold;
   position: relative;
-  line-height: 24px;
+  line-height: 21px;
   margin-bottom: 0;
 }
 .pagination .pagination_next a:before,
@@ -1071,7 +1071,7 @@ a:hover {
 }
 .item-pagination .next a, .item-pagination .previous a {
   min-height: 36px;
-  padding: 0.375em 0.75em;
+  padding: 0.42857em 0.85714em;
   display: block;
   background-color: #2b2b2b;
   color: #fff;
@@ -1207,7 +1207,7 @@ a:hover {
 form fieldset {
   border: 0;
   padding: 0;
-  margin: 0 0 1.5em 0;
+  margin: 0 0 1.71429em 0;
 }
 form label, form input, form select {
   margin: 1em .5em 1em 0;
@@ -1220,7 +1220,7 @@ select {
   border: 1px solid #ededed;
   height: 36px;
   line-height: 36px;
-  font-size: 16px;
+  font-size: 14px;
   margin-right: 3px !important;
   display: inline-block;
 }
@@ -1229,11 +1229,11 @@ input[type=text],
 input[type=password] {
   border-color: #ededed;
   background: #fff;
-  border-width: 0.0625em;
+  border-width: 0.07143em;
   border-style: solid;
-  padding: -0.0625em;
+  padding: -0.07143em;
   min-height: 36px;
-  padding: 0.375em;
+  padding: 0.42857em;
   border-radius: 3px;
 }
 
@@ -1241,7 +1241,7 @@ input[type=submit],
 button,
 .button {
   min-height: 36px;
-  padding: 0.375em 0.75em;
+  padding: 0.42857em 0.85714em;
   display: block;
   background-color: #2b2b2b;
   color: #fff;
@@ -1330,7 +1330,7 @@ button:active,
   bottom: 0;
   right: 0;
   line-height: 24px;
-  padding: 0.375em;
+  padding: 0.42857em;
 }
 #search-container .show-advanced {
   padding: 0;
@@ -1371,7 +1371,7 @@ button:active,
 }
 #search-container #advanced-form input[type=checkbox],
 #search-container #advanced-form input[type=radio] {
-  margin: 0.375em 5px 0 0;
+  margin: 0.42857em 5px 0 0;
   float: left;
 }
 
@@ -1379,7 +1379,7 @@ button:active,
 #item-filters ul {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.71429em;
 }
 #search-filters li,
 #item-filters li {
@@ -1425,7 +1425,7 @@ button:active,
 }
 
 .remove_search {
-  padding: 0.375em 10px;
+  padding: 0.42857em 10px;
   text-indent: -9999px;
   width: 36px;
   position: relative;
@@ -1468,7 +1468,7 @@ th {
 /* Browse and Item Pages */
 #recent-items .item {
   border-bottom: 1px solid #ededed;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.71429em;
 }
 
 .show .element-set {
@@ -1521,7 +1521,7 @@ th {
 
 #itemfiles .download-link {
   display: block;
-  height: 7.5em;
+  height: 8.57143em;
 }
 #itemfiles .download-link img {
   height: 100%;
@@ -1531,7 +1531,7 @@ th {
 /* -------------------------------------------------------------------------*/
 /* File Pages */
 body.files .item-file {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.71429em;
 }
 
 /* -------------------------------------------------------------------------*/
@@ -1664,7 +1664,7 @@ body.files .item-file {
 }
 #simple-pages-breadcrumbs a {
   min-height: 36px;
-  padding: 0.375em 0.75em;
+  padding: 0.42857em 0.85714em;
   display: block;
   background-color: #2b2b2b;
   color: #fff;
@@ -1855,7 +1855,7 @@ body.files .item-file {
 }
 .exhibits.show #exhibit-child-pages .exhibit-child-nav li a {
   min-height: 36px;
-  padding: 0.375em 0.75em;
+  padding: 0.42857em 0.85714em;
   display: block;
   background-color: #2b2b2b;
   color: #fff;
@@ -2373,7 +2373,7 @@ body.embeded #site-title > span.logo-image {
   }
   .item.hentry .item-img {
     padding-bottom: .5em;
-    height: 7.5em;
+    height: 8.57143em;
     position: absolute;
     left: 0;
     top: 34px;
@@ -2433,8 +2433,8 @@ body.embeded #site-title > span.logo-image {
   .image {
     display: block;
     float: left;
-    margin: 0 1.5em 1.5em 0;
-    height: 7.5em;
+    margin: 0 1.71429em 1.71429em 0;
+    height: 8.57143em;
   }
   .image img {
     float: left;

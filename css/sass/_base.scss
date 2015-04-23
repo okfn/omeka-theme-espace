@@ -44,6 +44,6 @@ $footer-background: $background-color;
 @include font-face("Open Sans Bold", font-files("opensans-bold-webfont.woff2", "opensans-bold-webfont.woff", "opensans-bold-webfont.ttf", "opensans-bold-webfont.svg"), "opensans-bold-webfont.eot");
 
 $font-family-main: "Open Sans",Helvetica,Arial,sans-serif;
-$base-font-size: 16px;
+$base-font-size: 14px;
 $base-line-height: 24px;
 $font-family-title: "Open Sans Bold",$font-family-main;
