@@ -21,7 +21,6 @@
 
     <!-- Stylesheets -->
     <?php
-    queue_css_url('//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
     queue_css_file(array('iconfonts','style'));
     echo head_css();
     ?>
@@ -41,12 +40,20 @@
 
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
 
-            <?php echo theme_header_image(); ?>
-
             <div id="site-title">
-              <?php echo link_to_home_page(theme_logo()); ?>
-              <?php if (get_theme_option('tagline')): ?>
-              <span class="tagline"><?php echo get_theme_option('tagline'); ?></span>
+              
+              <?php if (get_theme_option('logo')): ?>
+              <span class="logo-image">
+                <?php echo link_to_home_page(theme_logo()); ?>
+              </span>
+              <span class="logo-type has-image">
+              <?php else: ?>
+              <span class="logo-type">
+              <?php endif; ?>
+                <?php echo link_to_home_page(); ?>
+                <?php if (get_theme_option('tagline')): ?>
+                <span class="tagline"><?php echo get_theme_option('tagline'); ?></span>
+              </span>
               <?php endif; ?>
             </div>
 

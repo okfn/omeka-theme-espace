@@ -27,6 +27,11 @@ if (jQuery) {
             setTimeout(function () {
                 $('body').removeClass('init');
             }, 500);
+            
+            // add class if site is in iframe
+            if (window!=window.top) { 
+              $( "body" ).addClass( "embeded" );
+            }
         });
     }(jQuery));
 }

@@ -24,22 +24,26 @@ $base-spacing: 32px;
 $background-color: #fff;
 $text-color: #444;
 
-$accent-main: #0EADA9;
+$accent-main: #21759b;
 $accent-dark: darken($accent-main, 5);
 $accent-light: lighten($accent-main, 5);
 
-$grey-dark: #363636;
-$grey-medium: #A4A4A4; 
-$grey-light: #ECECEC;
+$grey-dark: #515151;
+$grey-medium: #757575;
+$grey-light: #ededed;
 
-$footer-background: $grey-dark;
+$footer-background: $background-color;
 
 // ---------------------------------------------------------------------------
 // Typography
 
-$font-family-main: 'Lato', Verdana, Arial, sans-serif;
+@include font-face("Open Sans", font-files("opensans-regular-webfont.woff2", "opensans-regular-webfont.woff", "opensans-regular-webfont.ttf", "opensans-regular-webfont.svg"), "opensans-regular-webfont.eot");
+@include font-face("Open Sans", font-files("opensans-semibold-webfont.woff2", "opensans-semibold-webfont.woff", "opensans-semibold-webfont.ttf", "opensans-semibold-webfont.svg"), "opensans-semibold-webfont.eot", bold);
+@include font-face("Open Sans", font-files("opensans-italic-webfont.woff2", "opensans-italic-webfont.woff", "opensans-italic-webfont.ttf", "opensans-italic-webfont.svg"), "opensans-italic-webfont.eot", normal, italic);
+
+@include font-face("Open Sans Bold", font-files("opensans-bold-webfont.woff2", "opensans-bold-webfont.woff", "opensans-bold-webfont.ttf", "opensans-bold-webfont.svg"), "opensans-bold-webfont.eot");
+
+$font-family-main: "Open Sans",Helvetica,Arial,sans-serif;
 $base-font-size: 16px;
 $base-line-height: 24px;
-$font-family-title: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
-
-@include font-face("Century Gothic", font-files("century_gothic/century_gothic.woff", "century_gothic/century_gothic.ttf", "century_gothic/century_gothic.svg"));
+$font-family-title: "Open Sans Bold",$font-family-main;

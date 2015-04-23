@@ -20,18 +20,19 @@
 }
 #site-title {
   @include span-columns (7,12);
-  line-height: 55px;
-  font-size: $base-font-size * 1.7;
-  
-  a {
-    float:left;
+  display:table;
+  max-width:500px;
+    
+  & > span {
+    display:table-cell;
+    vertical-align:middle;
   }
   
-  .tagline {
-    float:left;
-    margin-left:10px;
-    line-height:70px;
-    position:absolute;
+  a {
+    img {
+      height: 180px;
+      margin-bottom:0;
+    }
   }
 }
 #search-container {@include span-columns (5 omega, 12);}
@@ -102,6 +103,9 @@
 
 #search-container {
     margin: 30px 0;
+    position:absolute;
+    bottom:30px;
+    right:0;
 }
 /* -------------------------------------------------------------------------*/
 /* Advanced Search Form */
@@ -137,21 +141,10 @@
     padding: 0;
     z-index: 15;
     float: left;
-    background-color:$accent-main;   
-    
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 9600px;
-      right: 100%;
-      background-color:$accent-main; 
-    }
-    &:after { 
-      left: 100%;
-    }
+    background-color:$background-color;
+    border-top:solid 1px $grey-light;
+    border-bottom:solid 1px $grey-light;
+    text-transform:uppercase;
     
     li {
         width: auto;
@@ -160,11 +153,6 @@
     a {
         text-decoration: none;
         padding: .5em;
-
-        &:link, 
-        &:visited {
-            color: $accent-main;
-        }
         
         &:hover, 
         &:focus {
@@ -190,41 +178,38 @@
     .nav-item > a {
         position: relative;
         display: inline-block;
-        padding: .5em 1em;
+        padding: 1em;
         margin: 0;
         border: 0;
-        color: white;
         &:hover {
-            color: white;
+            color: $grey-dark;
             background-color:rgba(255,255,255,0.20);
         }
         &:focus {
-            color: white;
+            color: $grey-dark;
         }
     }
 /* focus/open states of first descendant link within a top level 
    navigation item */
     .nav-item > a:focus,
     .nav-item > a.open {
-        background-color: $accent-main;
+        background-color: $grey-light;
     }
 
 /* open state of first descendant link within a top level 
    navigation item */
     .nav-item > a.open {
-        background-color: $grey-medium;
-        color: white;
         border-bottom: none;
         z-index: 1;
     }
     .sub-nav {
         position: absolute;
         display: none;
-        top: 2.5em;
+        top: 3.5em;
         padding: 0;
         border: 0;
         margin: 0;
-        background-color: $grey-medium;
+        background-color: $grey-light;
         z-index: 2;
         @include border-radius(0px 0px 3px 3px);
     }
@@ -234,9 +219,9 @@
         .active {
             
             a {
-                color: #fff;
+                color: $grey-dark;
                 &:hover {
-                    color: white;
+                    color: $grey-dark;
                 }
             }
         }
@@ -258,15 +243,15 @@
             margin: 0;
             padding: 0;
             a {
-                color: #fff;
+                color: $grey-medium;
                 padding: 0.5em 1em;
                 &:hover{
                     background-color:rgba(255,255,255,0.20);
-                    color: white;
+                    color: $grey-dark;
                 }
                 &:focus {
                     background-color: lighten($accent-light, 10%);
-                    color:white;
+                    color:$grey-dark;
                 }
             }
         }
@@ -403,63 +388,52 @@
 
 
 /* -------------------------------------------------------------------------*/
+/*  */
+
+.image {
+  display:block;
+  float: left;
+  margin: 0 rhythm() rhythm() 0;
+  height: rhythm(5);
+  
+  img { 
+      float: left; 
+      height: 100%;
+      width: auto;
+    }
+}
+
+
+/* -------------------------------------------------------------------------*/
 /* Home */
 #home {
-  .record {
-    overflow: visible;
-    position:relative;
-    min-height:146px;
-    
-    h3,
-    .item-description {
-      margin-right:150px;
-    }
-    
-    .image {
-      margin: 0 0 rhythm() rhythm();
-      height: rhythm(5);
-      position:absolute;
-      top:0;
-      right:0;
-      
-      img { 
-        height: 100%;
-        width: auto;
-      }
-    }
-  }
-  
-  [id^="featured-"] {
-    h2,
-    p {
-      margin-right:150px;
-    }
-    
-    .image {
-      top:-10px;
-    }
-  }
-  
-  #featured-item {
-    h2 {
-      margin-right:0;
-    }
-    .record {
-      h3,
-      .item-description {
-        margin-right:0;
-      }
-      
-      .image {
-        position:static;
-      }
-    }
-  }
-  
+  #featured-item,
+  #featured-collection,
   .featured-exhibit {
-    h2 {
-      padding-right:150px;
-      margin-top:0;
+    min-height:166px;
+    margin-bottom:1.5em;
+    
+    & > h2 {
+      position:absolute;
+      right:-2px;
+      margin:0;
+    }
+    
+    .image {
+      position:absolute;
+      top:$base-spacing / 3 * 2;
+      display:block;
+      margin:0;
+    }
+    
+    h3 {
+      margin-left:145px;
+      margin-right:80px;
+    }
+    
+    p {
+      margin-left:145px;
     }
   }
+
 }
