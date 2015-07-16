@@ -2,16 +2,15 @@
 
         <footer>
           <?php //echo public_nav_main(); ?>
-          <?php echo get_theme_option('Footer Text'); ?>
-          
+          <a href="http://openglam.org/"><img src="<?php echo img('openglam.png'); ?>" width="177" height="64" alt="OpenGLAM" /></a> &nbsp;
+          <a href="https://okfn.org/"><img src="<?php echo img('openknowledge.png'); ?>" width="191" height="64" alt="Open Knowledge" /></a>
           <hr>
           
           <div class="footer-secondary">
-      
+            <?php echo get_theme_option('Footer Text'); ?>
             <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = option('copyright')): ?>
-              <?php echo $copyright; ?>. 
+              <p><?php echo $copyright; ?>.</p> 
             <?php endif; ?>
-            <?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?>
 
             <?php fire_plugin_hook('public_footer', array('view'=>$this)); ?>
           </div>
